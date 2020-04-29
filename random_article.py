@@ -20,8 +20,6 @@ def __get_page_soup(url) -> BeautifulSoup:
     """
     
     html_doc = __get_page_content(url)
-    
-    open('out.html', 'w').write(html_doc)
     return BeautifulSoup(html_doc)
     
 
